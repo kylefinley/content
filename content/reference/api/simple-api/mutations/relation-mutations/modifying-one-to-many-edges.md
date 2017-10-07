@@ -75,7 +75,7 @@ Removes one edge between two nodes specified by `id`
 
 The query response can contain both nodes of the former edge. The names of query arguments and node names depend on the field names of the relation.
 
-> Removes an edge for the relation called `UserPosts` and query the user id and the post slug
+> Removes an edge for the relation called `UserPosts` and query the user id and the post title
 
 ```graphql
 ---
@@ -91,7 +91,7 @@ mutation {
       name
     }
     postsPost {
-      slug
+      title
     }
   }
 }
